@@ -3,6 +3,8 @@ class Idea < ApplicationRecord
 	self.table_name  = 'ideas'
 	self.primary_key = 'id'
 
+	belongs_to :user
+
 	validates :name,
 						presence: true,
 						uniqueness: false,

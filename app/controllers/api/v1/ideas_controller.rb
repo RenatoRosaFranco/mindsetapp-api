@@ -2,6 +2,8 @@
 module API
 	module V1
 		class IdeasController < ActionController::API
+			before_action :set_idea, only: [:show, :update, :destroy]
+			
 			def index
 				@ideas = Idea.all
 				render json: @ideas, status: 200
