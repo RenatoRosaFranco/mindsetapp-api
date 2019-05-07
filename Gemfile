@@ -24,6 +24,8 @@ gem 'factory_bot_rails'
 gem 'rails_best_practices'
 gem 'simplecov'
 gem 'rubocop'
+gem 'rack-attack'
+gem 'rack-cors'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
