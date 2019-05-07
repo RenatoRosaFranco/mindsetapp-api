@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 class Idea < ApplicationRecord
-	self.table_name = 'ideas'
-	self.primary_kdy = 'id'
+	self.table_name  = 'ideas'
+	self.primary_key = 'id'
 
 	validates :name,
 						presence: true,
