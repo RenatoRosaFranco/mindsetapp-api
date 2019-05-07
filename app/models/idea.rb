@@ -4,6 +4,8 @@ class Idea < ApplicationRecord
 	self.primary_key = 'id'
 
 	belongs_to :user
+	has_many   :comments, dependent: :destroy
+	has_many   :reviews,  dependent: :destroy
 
 	validates :name,
 						presence: true,
